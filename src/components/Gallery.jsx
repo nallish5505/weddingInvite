@@ -14,7 +14,7 @@ const galleryImages = [
   },
   {
     id: 2,
-    url: '..assets/hand.jpeg',
+    url: 'hand.jpeg',
     alt: 'Wedding photos',
     span: 'wide',
   },
