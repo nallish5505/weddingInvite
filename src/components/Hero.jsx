@@ -34,7 +34,7 @@ function Hero() {
 
       <div className={`hero-content ${loaded ? 'loaded' : ''}`}>
         {/* Top ornament */}
-        <div className="hero-ornament-top">✧ ✦ ✧</div><br /><br />
+        <div className="hero-ornament-top">✧ ✦ ✧</div>
 
         {/* "We're getting married" text */}
         <p className="hero-subtitle">We're Getting Married</p><br />
