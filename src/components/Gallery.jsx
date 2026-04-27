@@ -38,7 +38,7 @@ const galleryImages = [
   },
   {
     id: 6,
-    url: 'src/assets/WhatsApp\ Image\ 2026-04-27\ at\ 11.02.17 AM.jpeg',
+    url: 'src/assets/WhatsApp Image 2026-04-27 at 11.02.17 AM.jpeg',
     alt: 'Bride preparation',
     span: 'tall',
   },
