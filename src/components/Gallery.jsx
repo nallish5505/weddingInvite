@@ -8,37 +8,37 @@ import './Gallery.css'
 const galleryImages = [
   {
     id: 1,
-    src:"src/assets/walk.jpeg",
+    url:'src/assets/walk.jpeg',
     alt: 'Couple photos',
     span: 'tall',
   },
   {
     id: 2,
-    src: 'hand.jpeg',
+    url: 'src/assests/hand.jpeg',
     alt: 'Wedding photos',
     span: 'wide',
   },
   {
     id: 3,
-    url: '../assets/look.jpeg',
+    url: 'src/assets/look.jpeg',
     alt: 'Wedding photos',
     span: 'normal',
   },
   {
     id: 4,
-    url: 'romance.jpeg',
+    url: 'src/assets/romance.jpeg',
     alt: 'wedding photos',
     span: 'normal',
   },
   {
     id: 5,
-    url: '../assets/beach.jpeg',
+    url: 'src/assets/beach.jpeg',
     alt: 'Wedding photos',
     span: 'wide',
   },
   {
     id: 6,
-    url: 'src/assets/WhatsApp Image 2026-04-27 at 11.02.17 AM.jpeg',
+    url: 'src/assets/sf.jpeg',
     alt: 'Bride preparation',
     span: 'tall',
   },
@@ -50,7 +50,7 @@ const galleryImages = [
   },
   {
     id: 8,
-    url: '../assets/movie.jpeg',
+    url: 'src/assets/movie.jpeg',
     alt: 'Celebration moment',
     span: 'normal',
   },
