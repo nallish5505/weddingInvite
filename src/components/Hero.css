@@ -10,7 +10,7 @@
       rgba(44, 24, 16, 0.7) 0%,
       rgba(114, 47, 55, 0.5) 50%,
       rgba(44, 24, 16, 0.7) 100%),
-    url('../assets/home.jpeg') center/cover no-repeat;
+    url('../assets/hand.jpeg') center/cover no-repeat;
   overflow: hidden;
 }
 
