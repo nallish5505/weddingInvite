@@ -8,13 +8,13 @@ import './Gallery.css'
 const galleryImages = [
   {
     id: 1,
-    url:"src/assets/walk.jpeg",
+    src:"src/assets/walk.jpeg",
     alt: 'Couple photos',
     span: 'tall',
   },
   {
     id: 2,
-    url: 'hand.jpeg',
+    src: 'hand.jpeg',
     alt: 'Wedding photos',
     span: 'wide',
   },
