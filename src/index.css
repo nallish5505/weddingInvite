@@ -1,0 +1,185 @@
+/* ===== CSS Reset & Global Styles ===== */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Elegant Color Palette */
+  --gold: #c9a96e;
+  --gold-light: #e8d5a3;
+  --gold-dark: #a07d3f;
+  --cream: #fdf8f0;
+  --cream-dark: #f5ede0;
+  --blush: #f5e6e0;
+  --blush-dark: #e8c9c0;
+  --rose: #d4a0a0;
+  --burgundy: #722f37;
+  --burgundy-light: #8b3a42;
+  --dark: #2c1810;
+  --dark-light: #4a3228;
+  --white: #ffffff;
+  --text-dark: #3a2a1a;
+  --text-muted: #7a6a5a;
+  --overlay: rgba(44, 24, 16, 0.55);
+
+  /* Typography */
+  --font-script: 'Great Vibes', cursive;
+  --font-serif: 'Playfair Display', serif;
+  --font-elegant: 'Cormorant Garamond', serif;
+  --font-sans: 'Montserrat', sans-serif;
+
+  /* Spacing */
+  --section-padding: 100px 20px;
+  
+  /* Transitions */
+  --transition-smooth: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-elegant), serif;
+  color: var(--text-dark);
+  background-color: var(--cream);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-family: var(--font-sans);
+}
+
+input, textarea, select {
+  font-family: var(--font-elegant);
+  outline: none;
+}
+
+/* ===== Global Animation Classes ===== */
+.fade-in {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== Section Title Styles ===== */
+.section-title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-title .script-text {
+  font-family: var(--font-script);
+  font-size: 2.2rem;
+  color: var(--gold);
+  display: block;
+  margin-bottom: 5px;
+}
+
+.section-title h2 {
+  font-family: var(--font-serif);
+  font-size: 2.5rem;
+  color: var(--dark);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.section-title .divider {
+  width: 80px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  margin: 20px auto 0;
+}
+
+/* ===== Decorative Elements ===== */
+.ornament {
+  text-align: center;
+  color: var(--gold);
+  font-size: 1.5rem;
+  margin: 15px 0;
+  letter-spacing: 8px;
+}
+
+/* ===== Scrollbar ===== */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--cream);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gold-light);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gold);
+}
+
+/* ===== Selection ===== */
+::selection {
+  background: var(--gold-light);
+  color: var(--dark);
+}
+
+/* ===== Responsive Typography ===== */
+@media (max-width: 768px) {
+  :root {
+    --section-padding: 60px 15px;
+  }
+
+  .section-title .script-text {
+    font-size: 1.6rem;
+  }
+
+  .section-title h2 {
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title .script-text {
+    font-size: 1.4rem;
+  }
+
+  .section-title h2 {
+    font-size: 1.5rem;
+  }
+}

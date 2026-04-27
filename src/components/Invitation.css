@@ -1,0 +1,236 @@
+/* ===== Invitation Section ===== */
+.invitation-section {
+  position: relative;
+  padding: 120px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(180deg, var(--cream) 0%, var(--blush) 50%, var(--cream) 100%);
+  overflow: hidden;
+}
+
+.invitation-bg-pattern {
+  position: absolute;
+  inset: 0;
+  opacity: 0.03;
+  background-image: 
+    radial-gradient(circle at 25% 25%, var(--gold) 1px, transparent 1px),
+    radial-gradient(circle at 75% 75%, var(--gold) 1px, transparent 1px);
+  background-size: 60px 60px;
+  pointer-events: none;
+}
+
+/* ===== Wedding Card ===== */
+.invitation-card {
+  position: relative;
+  background: linear-gradient(145deg, var(--white) 0%, #fdf9f3 100%);
+  padding: 60px 50px;
+  max-width: 650px;
+  width: 100%;
+  text-align: center;
+  border: 1px solid var(--gold-light);
+  box-shadow: 
+    0 20px 60px rgba(201, 169, 110, 0.15),
+    0 0 0 1px rgba(201, 169, 110, 0.1),
+    inset 0 0 80px rgba(201, 169, 110, 0.03);
+  opacity: 0;
+  transform: translateY(50px) scale(0.95);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.invitation-card.animate-in {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* Corner Ornaments */
+.card-corner {
+  position: absolute;
+  font-size: 1.8rem;
+  color: var(--gold);
+  opacity: 0.5;
+  line-height: 1;
+}
+
+.card-corner.top-left { top: 15px; left: 20px; transform: rotate(0deg); }
+.card-corner.top-right { top: 15px; right: 20px; transform: scaleX(-1); }
+.card-corner.bottom-left { bottom: 15px; left: 20px; transform: scaleY(-1); }
+.card-corner.bottom-right { bottom: 15px; right: 20px; transform: scale(-1); }
+
+/* Inner Frame */
+.card-inner-frame {
+  border: 1px solid rgba(201, 169, 110, 0.25);
+  padding: 45px 35px;
+}
+
+/* Card Header */
+.card-header {
+  margin-bottom: 30px;
+}
+
+.card-ornament {
+  color: var(--gold);
+  letter-spacing: 10px;
+  font-size: 0.9rem;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.card-subtitle {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  font-weight: 400;
+}
+
+/* Card Names */
+.card-names {
+  margin-bottom: 30px;
+}
+
+.card-bride,
+.card-groom {
+  font-family: var(--font-script);
+  font-size: 3rem;
+  color: var(--dark);
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.card-and {
+  display: block;
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  color: var(--gold);
+  font-style: italic;
+  margin: 10px 0;
+}
+
+/* Card Message */
+.card-message {
+  margin-bottom: 30px;
+}
+
+.invite-text {
+  font-family: var(--font-elegant);
+  font-size: 1.15rem;
+  color: var(--text-muted);
+  font-style: italic;
+  line-height: 1.8;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* Card Details */
+.card-details {
+  margin-bottom: 30px;
+}
+
+.detail-ornament {
+  color: var(--gold);
+  letter-spacing: 8px;
+  font-size: 0.8rem;
+  margin: 15px 0;
+}
+
+.detail-date {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  color: var(--dark);
+  letter-spacing: 2px;
+  margin-bottom: 3px;
+}
+
+.detail-year {
+  font-family: var(--font-elegant);
+  font-size: 1rem;
+  color: var(--text-muted);
+  font-style: italic;
+  margin-bottom: 5px;
+}
+
+.detail-time {
+  font-family: var(--font-elegant);
+  font-size: 1rem;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+
+.detail-venue {
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  color: var(--dark);
+  letter-spacing: 2px;
+  margin-top: 10px;
+}
+
+.detail-address,
+.detail-city {
+  font-family: var(--font-elegant);
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-top: 3px;
+}
+
+/* Card Footer */
+.card-footer {
+  margin-top: 10px;
+}
+
+.dinner-text {
+  font-family: var(--font-elegant);
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+/* ===== Mobile Responsive ===== */
+@media (max-width: 768px) {
+  .invitation-card {
+    padding: 40px 25px;
+  }
+
+  .card-inner-frame {
+    padding: 30px 20px;
+  }
+
+  .card-bride,
+  .card-groom {
+    font-size: 2.3rem;
+  }
+
+  .detail-date {
+    font-size: 1rem;
+  }
+
+  .detail-venue {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .invitation-section {
+    padding: 80px 15px;
+  }
+
+  .invitation-card {
+    padding: 30px 15px;
+  }
+
+  .card-inner-frame {
+    padding: 25px 15px;
+  }
+
+  .card-bride,
+  .card-groom {
+    font-size: 1.9rem;
+  }
+
+  .card-corner {
+    font-size: 1.2rem;
+  }
+}
