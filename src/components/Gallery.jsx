@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './Gallery.css'
-import Photo from './assets/walk.jpg';
+
 
 
 /**
@@ -10,7 +10,7 @@ import Photo from './assets/walk.jpg';
 const galleryImages = [
   {
     id: 1,
-    url:{Photo},
+    url:'./assets/walk.jpeg',
     alt: 'Couple photos',
     span: 'tall',
   },
