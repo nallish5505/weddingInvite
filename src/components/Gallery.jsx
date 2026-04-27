@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import './Gallery.css'
+import photo from './assets/walk.jpg';
 
+<img src={photo} alt="img" />
 /**
  * Gallery Component
  * Masonry-style image gallery with lightbox functionality
@@ -8,7 +10,7 @@ import './Gallery.css'
 const galleryImages = [
   {
     id: 1,
-    url:'src/assets/walk.jpeg',
+    url:{photo},
     alt: 'Couple photos',
     span: 'tall',
   },
