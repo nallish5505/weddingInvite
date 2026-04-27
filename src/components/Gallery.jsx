@@ -1,6 +1,13 @@
 import React, { useState } from 'react'
 import './Gallery.css'
-
+import img1 from '../assets/walk.jpeg'
+import img2 from '../assets/hand.jpeg'
+import img3 from '../assets/look.jpeg'
+import img4 from '../assets/romance.jpeg'
+import img5 from '../assets/beach.jpeg'
+import img6 from '../assets/sf.jpeg'
+import img7 from '../assets/sunset.jpeg'
+import img8 from '../assets/movie.jpeg'
 
 
 /**
@@ -10,7 +17,7 @@ import './Gallery.css'
 const galleryImages = [
   {
     id: 1,
-    url:'./assets/walk.jpeg',
+    url: img1,
     alt: 'Couple photos',
     span: 'tall',
   },
