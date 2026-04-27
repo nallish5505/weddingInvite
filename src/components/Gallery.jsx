@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './Gallery.css'
 import photo from './assets/walk.jpg';
 
-<img src={photo} alt="img" />
+
 /**
  * Gallery Component
  * Masonry-style image gallery with lightbox functionality
