@@ -8,7 +8,7 @@ import './Gallery.css'
 const galleryImages = [
   {
     id: 1,
-    url: '../assets/walk.jpeg',
+    url: 'src/assets/walk.jpeg',
     alt: 'Couple photos',
     span: 'tall',
   },
