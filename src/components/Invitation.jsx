@@ -47,7 +47,7 @@ function Invitation() {
 
           <div className="card-message">
             <p className="invite-text">
-              Request the honor of your presence at the celebration of their marriage
+              Request the honor of your presence at the celebration of our marriage
             </p>
           </div>
 
