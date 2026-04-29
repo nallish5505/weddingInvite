@@ -53,7 +53,7 @@ function Invitation() {
 
           <div className="card-details">
             <div className="detail-ornament">— ✦ —</div>
-            <p className="detail-date">Friday, the Twenty Nineth of May</p>
+            <p className="detail-date">Friday, the Twenty Ninth of May</p>
             <p className="detail-year">Two Thousand and Twenty Six</p>
             <p className="detail-time">at Nine O'clock in the morning</p>
             <div className="detail-ornament">— ✦ —</div>
