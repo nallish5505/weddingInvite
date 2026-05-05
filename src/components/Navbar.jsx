@@ -32,7 +32,7 @@ function Navbar() {
     { id: 'invitation', label: 'Invitation' },
     
     { id: 'events', label: 'Event' },
-    { id: 'gallery', label: 'Gallery' },
+  
     
   ]
 
