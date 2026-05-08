@@ -50,7 +50,7 @@ function Footer() {
 
         {/* Hashtag */}
         <div className="footer-hashtag">
-          #SugeshAndManisha
+          #SugeshWedsManisha
         </div>
 
         {/* Copyright */}
