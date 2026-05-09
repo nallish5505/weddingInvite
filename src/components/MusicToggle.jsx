@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react'
 import './MusicToggle.css'
+import song from '/deltakalyanam.mp3'
 
 /**
  * MusicToggle Component
@@ -13,8 +14,7 @@ function MusicToggle() {
   useEffect(() => {
     // Create audio element
     audioRef.current = new Audio(
-      'https://cdn.pixabay.com/audio/2024/11/28/audio_3a4e853965.mp3'
-    )
+      {song} )
     audioRef.current.loop = true
     audioRef.current.volume = 0.3
 
