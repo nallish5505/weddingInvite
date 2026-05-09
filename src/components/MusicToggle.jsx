@@ -13,8 +13,7 @@ function MusicToggle() {
 
   useEffect(() => {
     // Create audio element
-    audioRef.current = new Audio(
-      {song} )
+    audioRef.current = new Audio(song)
     audioRef.current.loop = true
     audioRef.current.volume = 0.3
 
