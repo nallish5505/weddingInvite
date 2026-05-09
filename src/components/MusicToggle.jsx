@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react'
 import './MusicToggle.css'
-import song from '/Delta Kalyanam.mp3'
+import song from 'src/components/MusicToggle.jsx'
 
 /**
  * MusicToggle Component
